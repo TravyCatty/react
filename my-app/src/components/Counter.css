@@ -1,0 +1,33 @@
+div {
+    max-width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    color: #1abc9c;
+    font-size: 48px;
+}
+h2 {
+    font-size: 50px;
+    color: #1abc9c;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.buttons button {
+    font-size: 24px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 10px 20px;
+    text-align: center;
+    color: #fff;
+}
+.buttons button:hover {
+    background: #1abc9c;
+}
