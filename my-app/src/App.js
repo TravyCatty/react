@@ -18,6 +18,9 @@ function getGreetings(user) {
   }
 }
 //operator else if on jsx
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>
+}
 
 function App() {
   return (
@@ -25,6 +28,7 @@ function App() {
       <h1 className="greet">Hello, {getGreetings(user)}</h1> {/*fucntion in {fucntion then (object)} */}
       <a target="_blank" href="https://google.com"> link</a>
       <h2>It is {new Date().toLocaleTimeString()}</h2>
+      <Welcome name='Alice' />
     </div>
   );
 }
