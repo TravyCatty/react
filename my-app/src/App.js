@@ -9,8 +9,8 @@ function formatName(user) {
 }
 //return user firstname and lastName
 
-function getGreetings(user){
-  if(user) {
+function getGreetings(user) {
+  if (user) {
     return <h1>Hello, {formatName(user)}</h1>
   }
   else {
@@ -19,12 +19,12 @@ function getGreetings(user){
 }
 //operator else if on jsx
 
-
 function App() {
   return (
     <div className="App">
-      <h1>Hello, {getGreetings(user)}</h1> {/*fucntion in {fucntion then (object)} */}
+      <h1 className="greet">Hello, {getGreetings(user)}</h1> {/*fucntion in {fucntion then (object)} */}
       <a target="_blank" href="https://google.com"> link</a>
+      <h2>It is {new Date().toLocaleTimeString()}</h2>
     </div>
   );
 }
