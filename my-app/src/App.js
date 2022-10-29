@@ -1,3 +1,4 @@
+import ToDoList from './components/ToDoList';
 let user = {
   firstName: 'Ivan',
   lastName: 'Petrovich'
@@ -29,6 +30,7 @@ function App() {
       <a target="_blank" href="https://google.com"> link</a>
       <h2>It is {new Date().toLocaleTimeString()}</h2>
       <Welcome name='Alice' />
+      <ToDoList />
     </div>
   );
 }
