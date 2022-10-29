@@ -19,10 +19,12 @@ function getGreetings(user){
 }
 //operator else if on jsx
 
+
 function App() {
   return (
     <div className="App">
       <h1>Hello, {getGreetings(user)}</h1> {/*fucntion in {fucntion then (object)} */}
+      <a target="_blank" href="https://google.com"> link</a>
     </div>
   );
 }
